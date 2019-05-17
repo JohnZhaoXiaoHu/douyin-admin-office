@@ -71,9 +71,9 @@ export default {
     let validateVideoPathURL = (rule, value, callback) => {
       if (value === '') {
         callback(new Error('请输入视频URL'))
-      } else if (!regVideoUrl.test(value)) {
+      } /*else if (!regVideoUrl.test(value)) {
         callback(new Error('请输入正确的视频URL'))
-      } else {
+      }*/ else {
         callback()
       }
     }
